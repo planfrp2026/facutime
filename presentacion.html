@@ -973,6 +973,74 @@
     border-left-color: #16a34a;
   }
 
+  /* === Mockup: Instalar como app === */
+  .mk-instalar {
+    background: white;
+    border: 1px solid var(--gris-borde);
+    border-radius: var(--r-lg);
+    padding: 1.2rem 1.3rem;
+    box-shadow: var(--sombra-md);
+  }
+  .mk-instalar-cab {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--azul-800);
+    margin-bottom: 1rem;
+    text-align: center;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--gris-borde);
+  }
+  .mk-instalar-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .mk-instalar-paso {
+    background: var(--gris-fondo);
+    border-radius: var(--r-md);
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--gris-borde);
+  }
+  .mk-instalar-num {
+    color: var(--azul-700);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid var(--gris-borde);
+  }
+  .mk-instalar-titulo {
+    font-weight: 800;
+    font-size: 1.05rem;
+    color: var(--azul-900);
+    margin-bottom: 0.5rem;
+  }
+  .mk-instalar-pasos {
+    margin: 0;
+    padding-left: 1.2rem;
+    font-size: 0.85rem;
+    color: var(--texto);
+    line-height: 1.5;
+  }
+  .mk-instalar-pasos li { margin-bottom: 0.35rem; }
+  .mk-instalar-pasos strong { color: var(--azul-800); }
+  .mk-instalar-pie {
+    margin-top: 0.9rem;
+    padding-top: 0.7rem;
+    border-top: 1px dashed var(--gris-borde);
+    font-size: 0.85rem;
+    color: var(--texto-suave);
+    text-align: center;
+  }
+  .mk-instalar-pie strong { color: var(--azul-700); }
+  @media (max-width: 700px) {
+    .mk-instalar-grid { grid-template-columns: 1fr; }
+  }
+
   /* === Mockup 6: Exportar === */
   .mk-export-cont {
     background: white;
@@ -2257,6 +2325,53 @@
           <li><strong>Insignia con contador</strong>: muestra cuántos filtros tenés activos sin tener que abrir el panel.</li>
           <li><strong>Aulas en una sola columna</strong>: lectura natural sin scroll horizontal.</li>
           <li><strong>Mismo dashboard, sin cambios</strong>: la versión móvil no es un sitio aparte — es el mismo HTML adaptándose al ancho de la pantalla.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 10. Instalar como app -->
+    <div class="tour-item invertido">
+      <div class="tour-mockup">
+        <div class="mk-instalar">
+          <div class="mk-instalar-cab">📱 FacuTIME como app</div>
+          <div class="mk-instalar-grid">
+            <div class="mk-instalar-paso">
+              <div class="mk-instalar-num"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l-1.5 12a2 2 0 0 1-2 1.8H8.5a2 2 0 0 1-2-1.8L5 7z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg></div>
+              <div class="mk-instalar-titulo">Android</div>
+              <ol class="mk-instalar-pasos">
+                <li>Abrí la URL en <strong>Chrome</strong>.</li>
+                <li>Tocá el menú <strong>⋮</strong> arriba a la derecha.</li>
+                <li>Elegí <strong>Instalar app</strong> o <strong>Agregar a pantalla de inicio</strong>.</li>
+                <li>Confirmar. Aparece el ícono en el escritorio.</li>
+              </ol>
+            </div>
+            <div class="mk-instalar-paso">
+              <div class="mk-instalar-num"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M11 18h2"/></svg></div>
+              <div class="mk-instalar-titulo">iPhone</div>
+              <ol class="mk-instalar-pasos">
+                <li>Abrí la URL en <strong>Safari</strong> (importante: no Chrome).</li>
+                <li>Tocá el botón <strong>Compartir</strong> ⬆️ (abajo en el centro).</li>
+                <li>Scrolleá y elegí <strong>Agregar a pantalla de inicio</strong>.</li>
+                <li>Editá el nombre si querés y aceptás.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="mk-instalar-pie">
+            Una vez instalada, abre <strong>como una app</strong>: sin barra de navegador, en pantalla completa, con ícono propio en el escritorio.
+          </div>
+        </div>
+      </div>
+      <div class="tour-texto">
+        <span class="tour-numero">10</span>
+        <h3>Instalable como aplicación, sin tienda</h3>
+        <p>FacuTIME es una <strong>PWA</strong> (Progressive Web App): cumple los estándares para instalarse directamente desde el navegador, sin pasar por Google Play ni App Store. La instalación dura segundos y queda como una app más en el celular.</p>
+        <ul>
+          <li><strong>Sin trámites de tienda</strong>: no hay que publicar nada en Google Play ni App Store, no hay revisión ni costo de developer.</li>
+          <li><strong>Actualización automática</strong>: cada vez que Planeamiento publica un cambio, el usuario lo ve sin tener que actualizar la app.</li>
+          <li><strong>Ícono institucional UTN FRP</strong> propio en el escritorio del usuario.</li>
+          <li><strong>Pantalla completa</strong>, sin distracciones del navegador.</li>
+          <li><strong>Mismo URL público</strong>: la app es el mismo sitio, solo que envuelto como app. Quien no quiera instalar nada, sigue usando el navegador como siempre.</li>
+          <li><strong>Sin permisos invasivos</strong>: no pide ubicación, ni notificaciones, ni acceso a fotos. Solo abre páginas web.</li>
         </ul>
       </div>
     </div>
