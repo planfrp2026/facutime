@@ -2040,8 +2040,8 @@
         <ul>
           <li><strong>Día</strong>: cada día o "Toda la semana" para una mirada completa</li>
           <li><strong>Turno</strong>: Mañana (materias hasta las 12:59) · Tarde (desde las 13:00)</li>
-          <li><strong>Vista</strong>: dos vistas principales + cuatro especiales (En vivo, Espacios libres, Agenda institucional, Reservas individuales, Mesas de examen)</li>
-          <li><strong>Filtros de contenido</strong>: Aula · Materia · Carrera · Año, todos multi-selección (un panel con varios chips se combina con OR; entre paneles, AND)</li>
+          <li><strong>Vista</strong>: dos vistas principales + cinco especiales (En vivo, Espacios libres, Espacios institucionales, Eventos puntuales, Mesas de examen)</li>
+          <li><strong>Filtros de contenido</strong>: Aula · Materia · Carrera · Año, todos multi-selección. Dentro de un panel, varios chips suman (OR). Entre paneles, Aula/Año/Carrera acotan (AND); <strong>Materia suma al resto</strong>, lo que permite armar combinaciones del tipo "todo Civil 5° + esta materia de otro año"</li>
           <li>Aula y Materia tienen buscador con autocompletado para no scrollear listas largas</li>
         </ul>
       </div>
@@ -2103,9 +2103,10 @@
         <p>El dashboard detecta solo qué eventos están ocurriendo en el momento de la consulta y los resalta con animación pulsante. No requiere ninguna acción manual.</p>
         <ul>
           <li>Detección automática según día y hora del sistema</li>
-          <li>Marca visible en las tres vistas del dashboard</li>
+          <li>Marca visible en seis vistas: Por aula, Por hora, En vivo, Espacios institucionales, Eventos puntuales y Espacios libres</li>
           <li>Las aulas con un evento en curso quedan con borde rojo destacado</li>
           <li>En el timeline grande aparece una línea roja "AHORA" en la hora actual</li>
+          <li>En Espacios libres, el tramo libre que está sucediendo se marca con un puntito rojo pulsante — útil para localizar un aula disponible en este momento de un vistazo</li>
         </ul>
       </div>
     </div>
@@ -2321,7 +2322,7 @@
           <li><strong>Header mínimo</strong>: solo logo institucional + fecha de hoy. Nada que ocupe espacio innecesario.</li>
           <li><strong>Botones de día</strong> con scroll horizontal: tocás el día, listo.</li>
           <li><strong>Vista principal</strong> (Por aula / Por hora) siempre a un toque.</li>
-          <li><strong>Botón "⚙ Filtros y más vistas"</strong>: un solo botón despliega un panel desde abajo con todo lo demás (Turno, En vivo, Espacios libres, Agenda institucional, Reservas individuales, Mesas de examen, filtros por aula/materia/carrera/año, exportar, limpiar).</li>
+          <li><strong>Botón "⚙ Filtros y más vistas"</strong>: un solo botón despliega un panel desde abajo con todo lo demás (Turno, En vivo, Espacios libres, Espacios institucionales, Eventos puntuales, Mesas de examen, filtros por aula/materia/carrera/año, exportar, limpiar).</li>
           <li><strong>Insignia con contador</strong>: muestra cuántos filtros tenés activos sin tener que abrir el panel.</li>
           <li><strong>Aulas en una sola columna</strong>: lectura natural sin scroll horizontal.</li>
           <li><strong>Mismo dashboard, sin cambios</strong>: la versión móvil no es un sitio aparte — es el mismo HTML adaptándose al ancho de la pantalla.</li>
