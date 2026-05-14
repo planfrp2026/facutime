@@ -2377,6 +2377,67 @@
       </div>
     </div>
 
+    <!-- 11. Reservar espacios -->
+    <div class="tour-item">
+      <div class="tour-mockup">
+        <div style="position: relative; background: linear-gradient(180deg, rgba(1,18,64,0.06), rgba(1,18,64,0.02)); border-radius: 14px; padding: 1.6rem 1.2rem; min-height: 380px;">
+          <!-- Modal sobre fondo simulado -->
+          <div style="background: #fff; border: 1px solid #e6e9ef; border-radius: 14px; padding: 1.3rem 1.2rem 1.4rem; box-shadow: 0 14px 36px rgba(1,18,64,0.16); max-width: 380px; margin: 0 auto;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.45rem;">
+              <h4 style="margin: 0; color: var(--azul-utn, #011240); font-size: 1.08rem; font-weight: 700;">Reservar espacios</h4>
+              <span style="color: #9ca3af; font-size: 1.05rem; cursor: default;">✕</span>
+            </div>
+            <p style="font-size: 0.82rem; color: #6b7280; margin: 0 0 1rem; line-height: 1.45;">Elegí el tipo de espacio que querés reservar. Tu solicitud llega por mail a Planeamiento.</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem;">
+              <div style="border: 1px solid #e6e9ef; border-radius: 10px; padding: 0.85rem 0.6rem; text-align: center; background: #f8fafc;">
+                <div style="font-size: 1.4rem; margin-bottom: 0.25rem;">🏫</div>
+                <div style="font-weight: 600; font-size: 0.85rem; color: var(--azul-utn, #011240);">Aula común</div>
+                <div style="font-size: 0.7rem; color: #6b7280; margin-top: 0.15rem;">Elegí un tramo libre</div>
+              </div>
+              <div style="border: 1px solid #e6e9ef; border-radius: 10px; padding: 0.85rem 0.6rem; text-align: center; background: #f8fafc;">
+                <div style="font-size: 1.4rem; margin-bottom: 0.25rem;">🏛️</div>
+                <div style="font-weight: 600; font-size: 0.85rem; color: var(--azul-utn, #011240);">Aula Magna</div>
+                <div style="font-size: 0.7rem; color: #6b7280; margin-top: 0.15rem;">Eventos grandes</div>
+              </div>
+              <div style="border: 1px solid #e6e9ef; border-radius: 10px; padding: 0.85rem 0.6rem; text-align: center; background: #f8fafc;">
+                <div style="font-size: 1.4rem; margin-bottom: 0.25rem;">🎤</div>
+                <div style="font-weight: 600; font-size: 0.85rem; color: var(--azul-utn, #011240);">SUM</div>
+                <div style="font-size: 0.7rem; color: #6b7280; margin-top: 0.15rem;">Charlas, capacitaciones</div>
+              </div>
+              <div style="border: 1px solid #e6e9ef; border-radius: 10px; padding: 0.85rem 0.6rem; text-align: center; background: #f8fafc;">
+                <div style="font-size: 1.4rem; margin-bottom: 0.25rem;">⚖️</div>
+                <div style="font-weight: 600; font-size: 0.85rem; color: var(--azul-utn, #011240);">Consejo Directivo</div>
+                <div style="font-size: 0.7rem; color: #6b7280; margin-top: 0.15rem;">Reuniones de gestión</div>
+              </div>
+            </div>
+          </div>
+          <!-- Atajo desde Espacios libres -->
+          <div style="margin-top: 1.2rem; padding: 0.9rem 1rem; background: #fff; border: 1px solid #e6e9ef; border-radius: 10px; max-width: 380px; margin-left: auto; margin-right: auto;">
+            <div style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: #6b7280; margin-bottom: 0.45rem; font-weight: 600;">Atajo desde Espacios libres</div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+              <span style="background: #f1f5f9; border: 1px solid #e6e9ef; border-radius: 999px; padding: 0.25rem 0.7rem; font-size: 0.8rem; font-weight: 600; color: var(--azul-utn, #011240);">14:00 – 17:00</span>
+              <span style="color: #94a3b8; font-size: 0.85rem;">→</span>
+              <a style="color: var(--azul-utn, #011240); font-size: 0.8rem; font-weight: 600; text-decoration: underline; cursor: default;">＋ Reservar</a>
+              <span style="color: #6b7280; font-size: 0.75rem; margin-left: auto;">Aula + día pre-cargados</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tour-texto">
+        <span class="tour-numero">11</span>
+        <h3>Solicitar reserva de un espacio en dos clics</h3>
+        <p>Cualquier persona (alumnado, docente, externo) puede pedir el uso de un aula o de un espacio institucional desde el mismo dashboard, sin tener que mandar mail ni averiguar a quién dirigirse. La solicitud llega automáticamente a Planeamiento.</p>
+        <ul>
+          <li><strong>Botón "Reservar espacios"</strong> en la fila Día abre un modal con cuatro opciones: <strong>Aula común</strong>, <strong>Aula Magna</strong>, <strong>SUM</strong> y <strong>Consejo Directivo</strong>.</li>
+          <li><strong>Atajo desde "Espacios libres"</strong>: al pasar el cursor sobre un chip de hueco libre aparece un enlace "＋ Reservar" que abre el formulario con <strong>aula + día ya pre-cargados</strong>. El usuario solo completa el horario que necesita.</li>
+          <li><strong>Formulario simple</strong> (Google Forms): datos del solicitante, motivo, cantidad de personas. Para Aula Magna / SUM / CD se piden datos extra: soporte audiovisual, refrigerio, comentarios.</li>
+          <li><strong>Notificación automática a Planeamiento</strong>: cada solicitud dispara un mail formateado a <code>secplaneamiento@frp.utn.edu.ar</code> con todos los datos. El reply-to apunta al solicitante: responder al mail contesta directo a quien lo pidió.</li>
+          <li><strong>Registro completo</strong>: además del mail, la solicitud queda guardada en la pestaña "Respuestas" del Form, accesible cuando se necesite consultar histórico.</li>
+          <li><strong>Sin desarrollo a medida</strong>: el flujo se monta sobre Google Forms + Apps Script — herramientas que ya tiene cualquier cuenta de Google institucional. Cero costo, cero infraestructura.</li>
+        </ul>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -2649,8 +2710,8 @@
         <div class="hito actual">
           <div class="hito-caja">
             <div class="hito-tiempo">Hoy</div>
-            <h4>Prototipo + publicación + PWA</h4>
-            <p>Sitio activo en <code>planfrp2026.github.io/facutime</code>, accesible por enlace directo. Ya instalable como app en celular (PWA), sin pasar por tiendas.</p>
+            <h4>Prototipo + publicación + PWA + Reservas</h4>
+            <p>Sitio activo en <code>planfrp2026.github.io/facutime</code>, accesible por enlace directo. Instalable como app en celular (PWA). Reservas de espacios activas desde el propio dashboard, con notificación automática a Planeamiento.</p>
           </div>
         </div>
         <div class="hito proximo">
@@ -2670,8 +2731,8 @@
         <div class="hito futuro">
           <div class="hito-caja">
             <div class="hito-tiempo">Año 1 a 2</div>
-            <h4>Reserva de aulas online</h4>
-            <p>Flujo de reserva de aulas libres directamente desde la PWA ya existente.</p>
+            <h4>Integración nativa (alternativa)</h4>
+            <p>Eventualmente: montar el flujo de reservas dentro del propio dashboard (sin Google Forms). Hace más compleja la programación y la solución actual ya cubre la necesidad — queda como evolución posible, no como objetivo.</p>
           </div>
         </div>
         <div class="hito horizonte">
@@ -2741,25 +2802,30 @@
       <div class="fase fase-3">
         <div class="fase-num">
           <span class="num">3</span>
-          <span class="label">Visión</span>
+          <span class="label">Fase</span>
         </div>
         <div class="fase-cuerpo">
-          <h3>Reserva de aulas en línea</h3>
-          <p class="desc">Sobre la PWA ya existente, sumar un módulo de reserva: ver aulas libres, solicitar el espacio, recibir la aprobación. Notificaciones automáticas si hay cambios de aula o suspensión de clase. La app instalable de hoy ya es la base — no hay que rehacer nada del front.</p>
+          <h3>Reservas integradas en el dashboard</h3>
+          <p class="desc">Cualquier persona (alumnado, docente, externo) puede solicitar el uso de un aula o de un espacio institucional desde el propio dashboard. La solicitud llega automáticamente a Planeamiento por mail, con todos los datos formateados y el reply-to apuntando al solicitante.</p>
           <div class="fase-pills">
-            <span class="pill estado-vision">◆ Visión a futuro</span>
-            <span class="pill costo">Costo: a evaluar</span>
-            <span class="pill">Tiempo: 6 a 12 meses</span>
-            <span class="pill">Requiere desarrollo</span>
+            <span class="pill estado-actual">● Entregado (v1.17)</span>
+            <span class="pill costo">Costo: $0</span>
+            <span class="pill">Ya activo</span>
+            <span class="pill">Sin involucrar IT</span>
           </div>
           <div class="fase-detalle">
             <ul>
-              <li>Aprovecha la PWA ya publicada como base — no hay que reescribir la app desde cero</li>
-              <li>Reserva de aulas libres con flujo de aprobación</li>
-              <li>Notificaciones de cambios de aula o suspensión de clases</li>
-              <li>Integración eventual con SIU Guaraní y Moodle</li>
-              <li>Backend con base de datos: requiere infraestructura propia</li>
+              <li>Botón "Reservar espacios" en el dashboard abre un modal 2×2: Aula común, Aula Magna, SUM, Consejo Directivo</li>
+              <li>Atajo "＋ Reservar" en cada chip de Espacios libres — pre-carga aula y día automáticamente</li>
+              <li>Formulario con datos del solicitante + motivo + cantidad de personas (campos extra para espacios institucionales: soporte audiovisual, refrigerio, comentarios)</li>
+              <li>Notificación automática a <code>secplaneamiento@frp.utn.edu.ar</code> con el reply-to apuntando al solicitante: responder al mail contesta directo a quien lo pidió</li>
+              <li>Registro completo: las solicitudes quedan guardadas en la pestaña "Respuestas" del Form como histórico consultable</li>
+              <li>Sin desarrollo a medida: montado sobre Google Forms + Apps Script, herramientas que ya tiene cualquier cuenta institucional</li>
             </ul>
+            <div style="margin-top: 1.4rem; padding: 1rem 1.1rem; background: rgba(1,18,64,0.04); border-left: 3px solid #94a3b8; border-radius: 6px;">
+              <strong style="display: block; margin-bottom: 0.35rem; color: var(--azul-utn, #011240); font-size: 0.93rem;">Alternativa de evolución a futuro — no es objetivo</strong>
+              <p style="margin: 0; font-size: 0.88rem; color: #475569; line-height: 1.55;">A futuro podría montarse un formulario nativo <em>dentro</em> del dashboard, sin pasar por Google Forms, con calendario interactivo y aprobación en línea. <strong>El costo es que hace mucho más compleja la programación</strong>: requiere backend propio, base de datos, gestión de usuarios e infraestructura para alojar y mantener el servicio. La solución actual con Forms <strong>resuelve hoy la misma necesidad sin esa carga técnica</strong> — queda como camino a explorar solo si surgen requerimientos que Forms no pueda cubrir.</p>
+            </div>
           </div>
         </div>
       </div>
