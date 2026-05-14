@@ -2649,8 +2649,8 @@
         <div class="hito actual">
           <div class="hito-caja">
             <div class="hito-tiempo">Hoy</div>
-            <h4>Prototipo + publicación inicial</h4>
-            <p>Sitio activo en <code>planfrp2026.github.io/facutime</code>. Acceso por enlace directo, sin indexar en buscadores.</p>
+            <h4>Prototipo + publicación + PWA</h4>
+            <p>Sitio activo en <code>planfrp2026.github.io/facutime</code>, accesible por enlace directo. Ya instalable como app en celular (PWA), sin pasar por tiendas.</p>
           </div>
         </div>
         <div class="hito proximo">
@@ -2664,14 +2664,14 @@
           <div class="hito-caja">
             <div class="hito-tiempo">3 a 6 meses</div>
             <h4>Oficialización</h4>
-            <p>Migración al subdominio <code>horarios.frp.utn.edu.ar</code> con apoyo de IT.</p>
+            <p>Migración al subdominio <code>horarios.frp.utn.edu.ar</code> con apoyo de IT. Alternativa: servidor externo gratuito (Vercel) si no hay subdominio disponible.</p>
           </div>
         </div>
         <div class="hito futuro">
           <div class="hito-caja">
             <div class="hito-tiempo">Año 1 a 2</div>
-            <h4>App y reservas</h4>
-            <p>Desarrollo de la app móvil con reserva de aulas en línea.</p>
+            <h4>Reserva de aulas online</h4>
+            <p>Flujo de reserva de aulas libres directamente desde la PWA ya existente.</p>
           </div>
         </div>
         <div class="hito horizonte">
@@ -2719,20 +2719,20 @@
         </div>
         <div class="fase-cuerpo">
           <h3>Oficialización en subdominio FRP</h3>
-          <p class="desc">Una vez validado el funcionamiento, se mueve la publicación al servidor institucional. URL oficial bajo el dominio de la facultad. Planeamiento sigue siendo el único administrador del contenido.</p>
+          <p class="desc">Una vez validado el funcionamiento, se mueve la publicación a una URL oficial. Camino preferido: subdominio bajo el dominio de la facultad. Camino alternativo: si IT no puede asignar subdominio en lo inmediato, se sigue publicando gratis en un servidor externo (Vercel, Netlify, Cloudflare Pages) con un dominio descriptivo, sin bloquear el avance del proyecto. Planeamiento sigue siendo el único administrador del contenido en cualquiera de los dos caminos.</p>
           <div class="fase-pills">
             <span class="pill estado-proximo">▸ Próximo paso</span>
             <span class="pill costo">Costo: $0</span>
             <span class="pill">Tiempo: 1 a 2 semanas</span>
-            <span class="pill">Requiere IT</span>
+            <span class="pill">Requiere IT (camino preferido)</span>
           </div>
           <div class="fase-detalle">
             <ul>
-              <li>Subdominio <code>horarios.frp.utn.edu.ar</code> bajo el dominio oficial</li>
-              <li>HTTPS con certificado válido de la facultad</li>
-              <li>Carpeta de red o SFTP a la que el <code>.bat</code> copia el HTML actualizado</li>
-              <li>Cero carga operativa para IT: es un sitio estático, no requiere mantenimiento continuo</li>
-              <li>Planeamiento conserva el control total del contenido</li>
+              <li><strong>Camino preferido — subdominio institucional</strong>: <code>horarios.frp.utn.edu.ar</code> bajo el dominio oficial, HTTPS con certificado de la facultad. Cero carga operativa para IT: es un sitio estático que no requiere mantenimiento continuo.</li>
+              <li><strong>Camino alternativo — servidor externo gratuito</strong>: si IT no puede gestionar el subdominio en lo inmediato, se publica en <strong>Vercel</strong>, Netlify o Cloudflare Pages (servicios gratuitos para sitios estáticos). HTTPS automático, URL del tipo <code>facutime.vercel.app</code> o similar.</li>
+              <li>Carpeta de red, SFTP o repo Git al que el <code>.bat</code> publica el HTML actualizado</li>
+              <li>Planeamiento conserva el control total del contenido en cualquier escenario</li>
+              <li>El cambio de URL no afecta el flujo interno de la oficina — solo cambia "dónde apunta el <code>.bat</code> de publicar"</li>
             </ul>
           </div>
         </div>
@@ -2744,8 +2744,8 @@
           <span class="label">Visión</span>
         </div>
         <div class="fase-cuerpo">
-          <h3>App de horarios y reserva de aulas</h3>
-          <p class="desc">Evolución hacia una aplicación móvil instalable que, además de mostrar horarios, permita reservar aulas libres en línea. Sistema de turnos, aprobaciones y notificaciones.</p>
+          <h3>Reserva de aulas en línea</h3>
+          <p class="desc">Sobre la PWA ya existente, sumar un módulo de reserva: ver aulas libres, solicitar el espacio, recibir la aprobación. Notificaciones automáticas si hay cambios de aula o suspensión de clase. La app instalable de hoy ya es la base — no hay que rehacer nada del front.</p>
           <div class="fase-pills">
             <span class="pill estado-vision">◆ Visión a futuro</span>
             <span class="pill costo">Costo: a evaluar</span>
@@ -2754,7 +2754,7 @@
           </div>
           <div class="fase-detalle">
             <ul>
-              <li>App instalable en celular (PWA o nativa)</li>
+              <li>Aprovecha la PWA ya publicada como base — no hay que reescribir la app desde cero</li>
               <li>Reserva de aulas libres con flujo de aprobación</li>
               <li>Notificaciones de cambios de aula o suspensión de clases</li>
               <li>Integración eventual con SIU Guaraní y Moodle</li>
@@ -2893,7 +2893,7 @@
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="7" cy="12" r="1.5"/><path d="M11 12h7"/></svg>
         </div>
         <h4>IT FRP</h4>
-        <p>Aloja el sitio en el subdominio (Fase 2). Su responsabilidad termina ahí: no toca contenido ni precisa intervenir en actualizaciones.</p>
+        <p>Aloja el sitio en el subdominio institucional (Fase 2, camino preferido). Su responsabilidad termina ahí: no toca contenido ni interviene en actualizaciones. Si no puede asignar subdominio en lo inmediato, el proyecto avanza con un servidor externo gratuito (Vercel u otro) y se migra después.</p>
       </div>
 
       <div class="rol">
@@ -2972,7 +2972,7 @@
 <section class="cierre" id="cierre">
   <div class="contenedor">
     <span class="eyebrow">Próximos pasos</span>
-    <h2>El dashboard está listo para ser visto.</h2>
+    <h2>FacuTIME está listo para que lo conozcas.</h2>
     <p>
       La Fase 1 está terminada y funcionando hoy en la PC de Planeamiento.
       Lo que sigue es habilitar la publicación pública para empezar a recibir feedback real.
