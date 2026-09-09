@@ -2,7 +2,7 @@
 // Se versiona con la versión del dashboard. Al publicar una versión nueva,
 // el cache viejo se descarta solo en el evento `activate`.
 
-const CACHE_NAME = 'facutime-v1.41';
+const CACHE_NAME = 'facutime-v1.42';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
